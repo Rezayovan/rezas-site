@@ -17,9 +17,10 @@ export default function RootLayout({
   let routes = ["about", "projects", "resumé"]
   return (
     <html lang="en">
-    <NavBar navs={routes}>
-      <body className={inter.className}>{children}</body>
-    </NavBar>
+    <div>
+        <NavBar navs={routes}/>
+        <body className={inter.className}>{children}</body>
+    </div>
     </html>
   )
 }
